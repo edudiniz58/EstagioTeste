@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/estilo.css">
+	<title>Editar</title>
+</head>
+
+<body>
+	<h3 class="h3-amarelo">Formulario</h3>
+
+	<form action="lista.html" method="post">
+	<section>
+
+		<!-- DADOS PESSOAIS-->
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+			<table cellspacing="10">
+				<tr>
+					<td>
+						<label for="nome">Nome: </label>
+						<input type="text" name="nome" placeholder="digite seu nome:" value="Eduardo">
+					</td>
+					<td>
+						<label for="sobrenome">Sobrenome: </label>
+						<input type="text" name="sobrenome" placeholder="digite seu sobrenome" value="Diniz">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Nascimento: </label>
+						<input type="text" name="dia" size="2" maxlength="2" placeholder="dd" value="26">
+						<input type="text" name="mes" size="2" maxlength="2" placeholder="mm" value="03"> 
+						<input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa" value="1999">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="rg">RG: </label>
+						<input type="text" name="rg" size="13" maxlength="13" placeholder="Digite seu rg" value="39.846.951-9"> 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>CPF:</label>
+						<input type="text" name="cpf" size="9" maxlength="15" placeholder="xxx.xxx.xxx-xx" value="474.925.658-79">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<br />
+		<!-- ENDEREÇO -->
+		<fieldset>
+			<legend>Dados de Endereço</legend>
+			<table cellspacing="10">
+				<tr>
+					<td>
+						<label for="rua">Rua: </label>
+						<input type="text" name="rua" placeholder="Av,Rua,Estrada,Praça" value="Rua Marques de Lages">
+					</td>
+					<td>
+						<label for="Complemento">Complemento:</label>
+						<input type="Complemento" placeholder="Apto,Casa">
+					</td>
+					<td>
+						<label for="numero">Numero:</label>
+						<input type="text" name="numero" size="4" placeholder="Digite" value="665">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="bairro">Bairro: </label>
+						<input type="text" name="bairro" placeholder="Digite seu bairro" value="Vila Moraes">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="estado">Estado:</label>
+						<select name="estado"> 
+							<option value="ac">Acre</option> 
+							<option value="al">Alagoas</option> 
+							<option value="am">Amazonas</option> 
+							<option value="ap">Amapá</option> 
+							<option value="ba">Bahia</option> 
+							<option value="ce">Ceará</option> 
+							<option value="df">Distrito Federal</option> 
+							<option value="es">Espírito Santo</option> 
+							<option value="go">Goiás</option> 
+							<option value="ma">Maranhão</option> 
+							<option value="mt">Mato Grosso</option> 
+							<option value="ms">Mato Grosso do Sul</option> 
+							<option value="mg">Minas Gerais</option> 
+							<option value="pa">Pará</option> 
+							<option value="pb">Paraíba</option> 
+							<option value="pr">Paraná</option> 
+							<option value="pe">Pernambuco</option> 
+							<option value="pi">Piauí</option> 
+							<option value="rj">Rio de Janeiro</option> 
+							<option value="rn">Rio Grande do Norte</option> 
+							<option value="ro">Rondônia</option> 
+							<option value="rs">Rio Grande do Sul</option> 
+							<option value="rr">Roraima</option> 
+							<option value="sc">Santa Catarina</option> 
+							<option value="se">Sergipe</option> 
+							<option value="sp" selected="true">São Paulo</option> 
+							<option value="to">Tocantins</option> 
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="cidade">Cidade: </label>
+						<input type="text" name="cidade" placeholder="Digite sua cidade" value="São Paulo">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="cep">CEP: </label>
+						<input type="text" name="cep" size="5" maxlength="9" placeholder="xxxxx-xxx" value="04162-001">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<br />
+
+		<!-- DADOS DE LOGIN -->
+		<fieldset>
+			<legend>Dados de login</legend>
+			<table cellspacing="10">
+				<tr>
+					<td>
+						<label for="email">E-mail: </label>
+						<input type="text" name="email" placeholder="Digite seu email" value="ediniz58@live.com">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="imagem" class="alinha-label-perfil">>Imagem de perfil:</label>
+						<img src="imagens/perfil.jpg" class="perfil">
+						<br>
+						<input type="file" name="imagem">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="login">Login de usuário: </label>
+						<input type="text" name="login" value="eduardo.diniz">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="pass">Senha: </label>
+						<input type="password" name="pass">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="passconfirm">Confirme a senha: </label>
+						<input type="password" name="passconfirm">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<br />
+		<input type="submit" name="Salvar" value="Salvar">
+		</section>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+/*INICIO CONTROLES*/
+body{
+	font-size: 1.18em;
+	font-family: "Arial, Verdana, Tahoma"
+}
+
+p{
+
+}
+
+label{
+
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+fieldset{
+	border-width: 1px;
+}
+
+ul{
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color:blue;
+}
+
+a:hover{
+	text-decoration: underline;
+	color:blue;
+}
+
+img{
+	border:none;
+}
+
+/*FIM CONTROLES*/
+
+
+/*INICIO CLASSES*/
+.tabela-usuarios.table.th.td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.perfil{
+	width: 60px;
+	height: 60px;
+}
+
+.alinha-label-perfil{
+	vertical-align: top;
+}
+
+/*FIM CLASSES*/
